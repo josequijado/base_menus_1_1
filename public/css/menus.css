@@ -1,0 +1,184 @@
+#app {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* BARRA SUPERIOR */
+.menuBar {
+    z-index: 2;
+}
+
+/* EL LOGO DE LA BARRA SUPERIOR */
+.main-logo {
+    margin-left: -30px;
+    max-width: 200px;
+    max-height: 50px;
+}
+
+@media (max-width: 767px) {
+    .main-logo {
+        margin-left: 0;
+        max-width: 150px;
+        max-height: 30px;
+    }
+}
+
+/* TITULOS Y CONTENIDOS DE MENÚS COLGANTES DE LA BARRA SUPERIOR */
+.submenuPanel {
+    z-index: 2;
+}
+
+.smallFlag {
+    border:0;
+    padding:0;
+    width: 20px;
+    margin-right:10px;
+}
+
+/* AVATAR DEL USUARIO EN BARRA SUPERIOR */
+.avatar {
+    height: 40px;
+}
+
+@media (max-width: 767px) {
+    .avatar {
+        display: none;
+    }
+}
+
+/* ICONO DE CIERRE DE SESIÓN EN BARRA SUPERIOR */
+.closeIcon {
+    font-size: 20px;
+}
+
+.closeIcon:hover {
+    font-weight: bold;
+}
+
+/* EL BOTÓN PARA MOSTRAR U OCULTAR EL MENÚ LATERAL */
+#sideMenuButtonWrapper {
+    cursor: pointer;
+    border: none;
+    width: 29px;
+    height: 24px;
+}
+
+@media (max-width: 767px) {
+    #sideMenuButtonWrapper {
+        position: relative;
+        left: -100px;
+    }
+}
+
+#sideMenuButton {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    margin: 2px;
+}
+
+#sideMenuButton span {
+    opacity: 1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .4s ease-in-out;
+}
+
+#sideMenuButton span:nth-child(1) {
+    top: 0;
+}
+
+#sideMenuButton span:nth-child(2) {
+    top: 9px;
+}
+
+#sideMenuButton span:nth-child(3) {
+    top: 18px;
+}
+
+#sideMenuButton.open span:nth-child(1) {
+    transform: translateY(9px) rotate(135deg);
+}
+
+#sideMenuButton.open span:nth-child(2) {
+    opacity: 0;
+}
+
+#sideMenuButton.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-135deg);
+}
+
+/* EL MENÚ LATERAL*/
+#menu-container {
+    border: none;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+    width: 250px;
+    z-index: 1;
+    left: -100%;
+    height: calc(100% - 76px);
+    top: 76px;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    #menu-container {
+        height: calc(100% - 56px);
+        top: 56px;
+    }
+}
+
+.menu-list li.accordion-toggle, .menu-list {
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.accordion-toggle, .accordion-content {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-toggle a:before, .accordion-toggle a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-toggle a:before {
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 2;
+}
+
+.accordion-toggle a.active:before {
+    transform: rotate(0deg);
+}
+
+.accordion-toggle a.active:after {
+    transform: rotate(180deg);
+}

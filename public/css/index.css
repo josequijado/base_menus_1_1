@@ -1,0 +1,21 @@
+.main-page {
+    position: fixed;
+    border: none;
+    height:calc(100% - 76px);
+    overflow-y: scroll;
+    top:76px;
+    z-index: 0;
+    background-image: url('../images/fondo_pagina_principal.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-clip: cover;
+}
+
+@media (max-width: 767px) {
+    .main-page {
+        height:calc(100% - 56px);
+        top: 56px;
+    }
+}

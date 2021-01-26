@@ -1,0 +1,17 @@
+{
+	"Regards" : "Salutari", 
+	"Hello!" : "Salut!", 
+
+	"Verify Your Email Address" : "Verifică-ți adresa de email",
+	"Please click the button below to verify your email address." : "Vă rugăm să faceți clic pe butonul de mai jos pentru a vă confirma adresa de e-mail.",
+	"Verify Email Address" : "Verifica adresa de email",
+	"If you did not create an account, no further action is required." : "Dacă nu ați creat un cont, nu este necesară nicio altă acțiune.",
+	
+	"Reset Password Notification" : "Resetați notificarea parolei",
+	"You are receiving this email because we received a password reset request for your account." : "Ați primit acest e-mail deoarece am primit o solicitare de resetare a parolei pentru contul dvs.", 
+	"Reset Password" : "Reseteaza parola",
+	"This password reset link will expire in :count minutes." : "Acest link de resetare a parolei va expira în :count minute.", 
+	"If you did not request a password reset, no further action is required." : "Dacă nu ați solicitat resetarea parolei, nu este necesară nicio altă acțiune.", 
+	
+	"If you’re having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:" : "Dacă întâmpinați probleme făcând clic pe butonul \":actionText\", copiați și lipiți adresa URL de mai jos\nîn browserul dvs. web:"
+}

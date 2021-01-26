@@ -1,0 +1,27 @@
+<?php
+    return [
+        'Users list' => 'Users list',
+        'Results per page' => 'Results per page',
+        'All' => 'All',
+        'Search' => 'Search',
+        'Sorting criteria' => 'Sorting criteria',
+        'Username' => 'Username',
+        'First name' => 'First name',
+        'Family name' => 'Family name',
+        'E-mail' => 'E-mail',
+        'International code' => 'International code',
+        'Phone number' => 'Phone number',
+        'Sorting order' => 'Sorting order',
+        'Ascending' => 'Ascending',
+        'Descending' => 'Descending',
+        'Filter' => 'Filter',
+        'ID' => 'ID',
+        'Username' => 'Username',
+        'Family name, First name' => 'Family name, First name',
+        'Scope' => 'Scope',
+        'E-mail' => 'E-mail',
+        'International code and Phone number' => 'IC & Phone number',
+        'Edit' => 'Edit',
+        'Impersonate' => 'Impersonate',
+    ];
+
